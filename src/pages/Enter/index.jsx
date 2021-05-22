@@ -18,7 +18,7 @@ export function Enter() {
   const Validator = yup.object().shape({
     email: yup
       .string()
-      .required("Insira o e-mail")
+      .required("Insira o email")
       .min(3, "O e-mail deve conter pelo menos 3 dígitos")
       .email("E-mail inválido"),
     password: yup
